@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    image: recipe-api-web:latest
+    volumes:
+      - ./app:/app
